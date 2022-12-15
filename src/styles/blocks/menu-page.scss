@@ -8,19 +8,31 @@
   &__container {
     display: flex;
     height: 100vh;
-
     flex-direction: column;
-    align-items: center;
+  }
+
+  &__logos {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
     justify-content: space-between;
   }
 
   &__logo {
-    margin-bottom: 50px;
+    margin: auto 0;
     transition: transform $animationSpeed;
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
   }
 
   &__item {
@@ -38,8 +50,7 @@
     background-image: url(/images/icons/cross-white.png);
     width: 18px;
     height: 18px;
-    margin: 25px auto;
-    margin-bottom: 50px;
+    margin: auto 0;
     transition: transform $animationSpeed;
 
     &:hover {
